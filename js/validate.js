@@ -59,7 +59,7 @@ $(document).ready(
     $.validator.addMethod(
       "checkUserType",
       function (userType) {
-        userType != "0" ? true : false;
+        return userType != "0" ? true : false;
       },
       "Choose a option - eg: Driver"
     );
