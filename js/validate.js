@@ -96,7 +96,7 @@ $(document).ready(
             hour: $("#hour").val(),
           };
           localStorage.setItem("datos", JSON.stringify(data));
-          $("#appointment-form").reset();
+          $("input").val("");
 
 
         } else if (result.isDenied) {
