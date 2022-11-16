@@ -65,6 +65,7 @@ $(document).ready(
     );
 
     $("#schedule-appoiment").click(() => {
+     
       if (!$("#appointment-form").valid()) {
         Swal.fire({
           title: "Info",
@@ -97,9 +98,8 @@ $(document).ready(
           };
           localStorage.setItem("datos", JSON.stringify(data));
           $("input").val("");
-
-
-        } else if (result.isDenied) {
+        } 
+        else if (result.isDenied) {
           Swal.fire("Los cambios no fueron guardados", "", "info");
         }
       });
