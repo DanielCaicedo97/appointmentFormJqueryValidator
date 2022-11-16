@@ -1,11 +1,11 @@
  
-var inMinutes = (1)/(24*60);  // 1/24*1/60*(Valor en mintuos)
+var inMinutes = (1)/(24*60);  // 1/24*1/60*(Valor en mintuos) = (Valor Minutos)/(24*60)
 
 let nIntervId; // variable para almacenar nuestro intervalID
 
 const eliminarLocalStorage = () => {
     localStorage.removeItem("datos")
-    nIntervId = null;
+    //localStorage.clear()
 }
 
 
@@ -21,7 +21,9 @@ Cookies.set('name', 'Alejo', {
     expires: inMinutes
 });
 
+if(localStorage.getItem('datos') !== undefined){ //verificamos si hay algo en el local Storage
 //Creamos el interval a 1s
 nIntervId = setInterval(ComprobarCookie, 1000);
+}
 
 });
