@@ -1,5 +1,5 @@
  
-var inMinutes = (1)/(24*60);  // 1/24*1/60*(Valor en mintuos) = (Valor Minutos)/(24*60)
+var inMinutes = (5)/(24*60);  // 1/24*1/60*(Valor en mintuos) = (Valor Minutos)/(24*60)
 
 let nIntervId; // variable para almacenar nuestro intervalID
 
