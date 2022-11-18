@@ -49,8 +49,6 @@ $(document).ready(
   });
 
 
-
-
     $.validator.addMethod(
       "emailCustom",
       function (email) {
@@ -108,7 +106,7 @@ $(document).ready(
           $("input").val("");
         } 
         else if (result.isDenied) {
-          Swal.fire("Los cambios no fueron guardados", "", "info");
+          Swal.fire("Changes not saved", "", "info");
         }
       });
     });
