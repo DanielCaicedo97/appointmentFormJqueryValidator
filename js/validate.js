@@ -43,6 +43,14 @@ $(document).ready(
       },
     });
 
+    $("#date").datepicker({
+      format: 'mm/dd/yyyy',
+      startDate: '-0d'
+  });
+
+
+
+
     $.validator.addMethod(
       "emailCustom",
       function (email) {
