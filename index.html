@@ -22,6 +22,7 @@
     <script src="js/validate.js"></script>
     <script src="js/Cookies.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Formulario Daniel</title>
 </head>
 
@@ -60,13 +61,11 @@
                     <option value="3">Passenger</option>
                 </select>
             </div>
-            <div>
+            <div id="date_container" name="date_container">
                 <label for="date" class="form-label">Select Date</label>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" name="date" id="date" placeholder="mm/dd/yyyy">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-calendar"></i></span>
-                    </div>
+                <div class="input-wrapper">
+                    <input type="text" readonly class="form-control" name="date" id="date" placeholder="mm/dd/yyyy">
+                    <i class="fa fa-calendar input-icon"></i>
                 </div>
 
             </div>

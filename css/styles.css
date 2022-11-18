@@ -1,0 +1,13 @@
+.input-wrapper {
+	position: relative;
+	width: 100vp;
+}
+
+.input-icon {
+	color: #191919;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 5px;
+	top: 10px;
+}
